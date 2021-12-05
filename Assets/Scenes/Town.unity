@@ -602,7 +602,7 @@ MonoBehaviour:
   moveSpeed: 7
   playerRigidBody: {fileID: 1786518504}
   playerAnimator: {fileID: 1786518507}
-  transitionName: 
+  transitionName: Mountains - 1
 --- !u!95 &1786518507
 Animator:
   serializedVersion: 3
@@ -663,6 +663,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1961296177}
     m_Modifications:
+    - target: {fileID: 1188035267, guid: cf267d8ab07a5414aa9aeff80df8fd0b, type: 3}
+      propertyPath: transitionAreaName
+      value: Mountains - 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1188035268, guid: cf267d8ab07a5414aa9aeff80df8fd0b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.47
