@@ -601,11 +601,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sentences:
-  - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pellentesque,
-    neque nec pulvinar sollicitudin, tortor felis venenatis mi,
+  - '#Demon'
   - at lobortis odio justo lobortis libero. Proin dapibus gravida dui in tristique.
   - 'Curabitur venenatis, elit id cursus euismod, tellus risus blandit ipsum, a sodales
     massa nisi a quam. '
+  - '#Healer'
+  - 'Wha- ..........Curabitur venenatis, elit id cursus euismod, tellus risus blandit
+    ipsum, a sodales massa nisi a quam. '
+  - 'Curabitur venenatis, elit id cursus euismod, tellus risus blandit ipsum, a sodales
+    massa nisi a quam. '
+  - '#Demon'
+  - AHahahaha!
 --- !u!1001 &1650203967
 PrefabInstance:
   m_ObjectHideFlags: 0

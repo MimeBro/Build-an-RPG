@@ -27,6 +27,7 @@ public class DialogController : MonoBehaviour
     {
         if (dialogBox.activeInHierarchy)
         {
+
             if (Input.GetButtonUp("Fire1"))
             {
                 if (!dialogJustStarted)
@@ -39,6 +40,7 @@ public class DialogController : MonoBehaviour
                     }
                     else
                     {
+                        CheckForName();
                         dialogText.text = dialogSentences[currentSentence];
                     }
                 }
@@ -55,11 +57,21 @@ public class DialogController : MonoBehaviour
         dialogSentences = newSentencesToUse;
         currentSentence = 0;
 
+        CheckForName();
         dialogText.text = dialogSentences[currentSentence];
         dialogBox.SetActive(true);
 
         dialogJustStarted = true;
         Player.instance.deactivatedMovement = true;
+    }
+
+    void CheckForName()
+    {
+        if (dialogSentences[currentSentence].StartsWith("#"))
+        {
+            nameText.text = dialogSentences[currentSentence].Replace("#", "");
+            currentSentence++;
+        }
     }
 
     public bool IsDialogBoxActive()
