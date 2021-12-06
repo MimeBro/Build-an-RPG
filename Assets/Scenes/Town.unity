@@ -628,7 +628,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7332259990983243415, guid: cf267d8ab07a5414aa9aeff80df8fd0b, type: 3}
       propertyPath: sceneToLoad
-      value: Mountains
+      value: Mountains 2
       objectReference: {fileID: 0}
     - target: {fileID: 7332259990983243415, guid: cf267d8ab07a5414aa9aeff80df8fd0b, type: 3}
       propertyPath: transitionAreaName
