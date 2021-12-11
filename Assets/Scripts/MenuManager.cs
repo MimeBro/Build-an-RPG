@@ -10,7 +10,7 @@ public class MenuManager : MonoBehaviour
     [SerializeField] GameObject menu;
 
     private PlayerStats[] playerStats;
-    [SerializeField] TextMeshProUGUI[] nameText, hpText, manaText, lvlText, expText;
+    [SerializeField] TextMeshProUGUI[] nameText, hpText, manaText, levelText, expText;
     [SerializeField] Slider[] expSlider;
     [SerializeField] Image[] characterImage;
     [SerializeField] GameObject[] characterPanel;
@@ -48,6 +48,18 @@ public class MenuManager : MonoBehaviour
         for (int i = 0; i < playerStats.Length; i++)
         {
             characterPanel[i].SetActive(true);
+
+            nameText[i].text = playerStats[i].playerName;
+
+            hpText[i].text = "HP: " + playerStats[i].currentHP + "/" + playerStats[i].maxHP;
+            manaText[i].text = "Mana: " + playerStats[i].currentMana + "/" + playerStats[i].maxMana;
+
+            levelText[i].text = "Level: " + playerStats[i].playerLevel;
+            expSlider[i].maxValue = playerStats[i].expForNextLevel[playerStats[i].playerLevel];
+            expSlider[i].value = playerStats[i].currentXP;
+            expText[i].text = playerStats[i].currentXP + "/" + playerStats[i].expForNextLevel[playerStats[i].playerLevel];
+
+            characterImage[i].sprite = playerStats[i].characterImage;
         }
     }
 

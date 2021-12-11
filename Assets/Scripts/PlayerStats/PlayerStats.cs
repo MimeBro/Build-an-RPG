@@ -5,20 +5,20 @@ using UnityEngine.UI;
 
 public class PlayerStats : MonoBehaviour
 {
-    [SerializeField] string playerName;
+    public string playerName;
 
-    [SerializeField] Sprite characterImage;
+     public Sprite characterImage;
 
     [SerializeField] int maxLevel = 50;
-    [SerializeField] int playerLevel = 1;
-    [SerializeField] int currentXP;
-    [SerializeField] int[] expForNextLevel;
+    public int playerLevel = 1;
+    public int currentXP;
+    public int[] expForNextLevel;
     [SerializeField] int baseLevelXP = 100;
 
-    [SerializeField] int maxHP = 100;
-    [SerializeField] int currentHP;
-    [SerializeField] int maxMana = 30;
-    [SerializeField] int currentMana;
+    public int maxHP = 100;
+    public int currentHP;
+    public int maxMana = 30;
+    public int currentMana;
 
     [SerializeField] int dexterity;
     [SerializeField] int defense;
@@ -41,7 +41,6 @@ public class PlayerStats : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             AddXP(100);
-
         }
     }
 
@@ -67,9 +66,6 @@ public class PlayerStats : MonoBehaviour
 
             maxMana = (int)(maxMana * 1.06f);
             currentMana = maxMana;
-
-
-
         }
     }
 }
