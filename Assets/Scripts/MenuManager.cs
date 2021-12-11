@@ -2,12 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class MenuManager : MonoBehaviour
 {
-
     [SerializeField] Image imageToFade;
     [SerializeField] GameObject menu;
+
+    private PlayerStats[] playerStats;
+    [SerializeField] TextMeshProUGUI[] nameText, hpText, manaText, lvlText, expText;
+    [SerializeField] Slider[] expSlider;
+    [SerializeField] Image[] characterImage;
+    [SerializeField] GameObject[] characterPanel;
+
+
     public static MenuManager instance;
 
     private void Start()
@@ -26,9 +34,20 @@ public class MenuManager : MonoBehaviour
             }
             else
             {
+                UpdateStats();
                 menu.SetActive(true);
                 GameManager.instance.gameMenuOpened = true;
             }
+        }
+    }
+
+    public void UpdateStats()
+    {
+        playerStats = GameManager.instance.GetPlayerStats();
+
+        for (int i = 0; i < playerStats.Length; i++)
+        {
+            characterPanel[i].SetActive(true);
         }
     }
 

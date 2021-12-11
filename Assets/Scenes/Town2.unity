@@ -960,7 +960,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &338139471
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2675,7 +2675,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &851151525
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2757,7 +2757,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &856070236
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3460,6 +3460,134 @@ PrefabInstance:
       propertyPath: menu
       value: 
       objectReference: {fileID: 1188906241}
+    - target: {fileID: 2709756842695476663, guid: 938af21770a89a149aa04ae98cac4b35, type: 3}
+      propertyPath: hpText.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2709756842695476663, guid: 938af21770a89a149aa04ae98cac4b35, type: 3}
+      propertyPath: expText.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2709756842695476663, guid: 938af21770a89a149aa04ae98cac4b35, type: 3}
+      propertyPath: lvlText.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2709756842695476663, guid: 938af21770a89a149aa04ae98cac4b35, type: 3}
+      propertyPath: manaText.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2709756842695476663, guid: 938af21770a89a149aa04ae98cac4b35, type: 3}
+      propertyPath: nameText.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2709756842695476663, guid: 938af21770a89a149aa04ae98cac4b35, type: 3}
+      propertyPath: expSlider.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2709756842695476663, guid: 938af21770a89a149aa04ae98cac4b35, type: 3}
+      propertyPath: hpText.Array.data[0]
+      value: 
+      objectReference: {fileID: 511386057}
+    - target: {fileID: 2709756842695476663, guid: 938af21770a89a149aa04ae98cac4b35, type: 3}
+      propertyPath: hpText.Array.data[1]
+      value: 
+      objectReference: {fileID: 954155113}
+    - target: {fileID: 2709756842695476663, guid: 938af21770a89a149aa04ae98cac4b35, type: 3}
+      propertyPath: hpText.Array.data[2]
+      value: 
+      objectReference: {fileID: 614228125}
+    - target: {fileID: 2709756842695476663, guid: 938af21770a89a149aa04ae98cac4b35, type: 3}
+      propertyPath: expText.Array.data[0]
+      value: 
+      objectReference: {fileID: 1020693484}
+    - target: {fileID: 2709756842695476663, guid: 938af21770a89a149aa04ae98cac4b35, type: 3}
+      propertyPath: expText.Array.data[1]
+      value: 
+      objectReference: {fileID: 1415072249}
+    - target: {fileID: 2709756842695476663, guid: 938af21770a89a149aa04ae98cac4b35, type: 3}
+      propertyPath: expText.Array.data[2]
+      value: 
+      objectReference: {fileID: 888538185}
+    - target: {fileID: 2709756842695476663, guid: 938af21770a89a149aa04ae98cac4b35, type: 3}
+      propertyPath: lvlText.Array.data[0]
+      value: 
+      objectReference: {fileID: 308259076}
+    - target: {fileID: 2709756842695476663, guid: 938af21770a89a149aa04ae98cac4b35, type: 3}
+      propertyPath: lvlText.Array.data[1]
+      value: 
+      objectReference: {fileID: 520069221}
+    - target: {fileID: 2709756842695476663, guid: 938af21770a89a149aa04ae98cac4b35, type: 3}
+      propertyPath: lvlText.Array.data[2]
+      value: 
+      objectReference: {fileID: 519185084}
+    - target: {fileID: 2709756842695476663, guid: 938af21770a89a149aa04ae98cac4b35, type: 3}
+      propertyPath: manaText.Array.data[0]
+      value: 
+      objectReference: {fileID: 1310826606}
+    - target: {fileID: 2709756842695476663, guid: 938af21770a89a149aa04ae98cac4b35, type: 3}
+      propertyPath: manaText.Array.data[1]
+      value: 
+      objectReference: {fileID: 641301906}
+    - target: {fileID: 2709756842695476663, guid: 938af21770a89a149aa04ae98cac4b35, type: 3}
+      propertyPath: manaText.Array.data[2]
+      value: 
+      objectReference: {fileID: 731959913}
+    - target: {fileID: 2709756842695476663, guid: 938af21770a89a149aa04ae98cac4b35, type: 3}
+      propertyPath: nameText.Array.data[0]
+      value: 
+      objectReference: {fileID: 1340578940}
+    - target: {fileID: 2709756842695476663, guid: 938af21770a89a149aa04ae98cac4b35, type: 3}
+      propertyPath: nameText.Array.data[1]
+      value: 
+      objectReference: {fileID: 566736652}
+    - target: {fileID: 2709756842695476663, guid: 938af21770a89a149aa04ae98cac4b35, type: 3}
+      propertyPath: nameText.Array.data[2]
+      value: 
+      objectReference: {fileID: 665029777}
+    - target: {fileID: 2709756842695476663, guid: 938af21770a89a149aa04ae98cac4b35, type: 3}
+      propertyPath: expSlider.Array.data[0]
+      value: 
+      objectReference: {fileID: 336914280}
+    - target: {fileID: 2709756842695476663, guid: 938af21770a89a149aa04ae98cac4b35, type: 3}
+      propertyPath: expSlider.Array.data[1]
+      value: 
+      objectReference: {fileID: 1265034976}
+    - target: {fileID: 2709756842695476663, guid: 938af21770a89a149aa04ae98cac4b35, type: 3}
+      propertyPath: expSlider.Array.data[2]
+      value: 
+      objectReference: {fileID: 133806441}
+    - target: {fileID: 2709756842695476663, guid: 938af21770a89a149aa04ae98cac4b35, type: 3}
+      propertyPath: characterImage.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2709756842695476663, guid: 938af21770a89a149aa04ae98cac4b35, type: 3}
+      propertyPath: characterPanel.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2709756842695476663, guid: 938af21770a89a149aa04ae98cac4b35, type: 3}
+      propertyPath: characterImage.Array.data[0]
+      value: 
+      objectReference: {fileID: 1515983132}
+    - target: {fileID: 2709756842695476663, guid: 938af21770a89a149aa04ae98cac4b35, type: 3}
+      propertyPath: characterImage.Array.data[1]
+      value: 
+      objectReference: {fileID: 951879940}
+    - target: {fileID: 2709756842695476663, guid: 938af21770a89a149aa04ae98cac4b35, type: 3}
+      propertyPath: characterImage.Array.data[2]
+      value: 
+      objectReference: {fileID: 1753601160}
+    - target: {fileID: 2709756842695476663, guid: 938af21770a89a149aa04ae98cac4b35, type: 3}
+      propertyPath: characterPanel.Array.data[0]
+      value: 
+      objectReference: {fileID: 851151524}
+    - target: {fileID: 2709756842695476663, guid: 938af21770a89a149aa04ae98cac4b35, type: 3}
+      propertyPath: characterPanel.Array.data[1]
+      value: 
+      objectReference: {fileID: 338139470}
+    - target: {fileID: 2709756842695476663, guid: 938af21770a89a149aa04ae98cac4b35, type: 3}
+      propertyPath: characterPanel.Array.data[2]
+      value: 
+      objectReference: {fileID: 856070235}
     - target: {fileID: 2709756842695476664, guid: 938af21770a89a149aa04ae98cac4b35, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -4489,6 +4617,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerName: Healer
+  characterImage: {fileID: -4554514618764200062, guid: 44b236c26e8646247a6fb932112236c0, type: 3}
   maxLevel: 50
   playerLevel: 1
   currentXP: 0
@@ -6062,6 +6191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerName: Demon
+  characterImage: {fileID: -2574567115669916243, guid: 199f6dfc9a66167449244c3dbf2235ef, type: 3}
   maxLevel: 50
   playerLevel: 1
   currentXP: 36

@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerStats : MonoBehaviour
 {
     [SerializeField] string playerName;
+
+    [SerializeField] Sprite characterImage;
 
     [SerializeField] int maxLevel = 50;
     [SerializeField] int playerLevel = 1;
