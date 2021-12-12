@@ -56,13 +56,13 @@ public class MenuManager : MonoBehaviour
 
             nameText[i].text = playerStats[i].playerName;
 
-            hpText[i].text = "HP: " + playerStats[i].currentHP + "/" + playerStats[i].maxHP;
-            manaText[i].text = "Mana: " + playerStats[i].currentMana + "/" + playerStats[i].maxMana;
+            hpText[i].text = "HP: " + playerStats[i].currentHP + " / " + playerStats[i].maxHP;
+            manaText[i].text = "Mana: " + playerStats[i].currentMana + " / " + playerStats[i].maxMana;
 
             levelText[i].text = "Level: " + playerStats[i].playerLevel;
             expSlider[i].maxValue = playerStats[i].expForNextLevel[playerStats[i].playerLevel];
             expSlider[i].value = playerStats[i].currentXP;
-            expText[i].text = playerStats[i].currentXP + "/" + playerStats[i].expForNextLevel[playerStats[i].playerLevel];
+            expText[i].text = playerStats[i].currentXP + " / " + playerStats[i].expForNextLevel[playerStats[i].playerLevel];
 
             characterImage[i].sprite = playerStats[i].characterImage;
         }
@@ -84,8 +84,8 @@ public class MenuManager : MonoBehaviour
         PlayerStats playerSelected = playerStats[playerSelectedNumber];
 
         statName.text = playerSelected.playerName;
-        statHP.text = playerSelected.currentHP + "/" + playerSelected.maxHP;
-        statMana.text = playerSelected.currentMana + "/" + playerSelected.maxMana;
+        statHP.text = playerSelected.currentHP + " / " + playerSelected.maxHP;
+        statMana.text = playerSelected.currentMana + " / " + playerSelected.maxMana;
 
         statDex.text = playerSelected.dexterity.ToString();
         statDef.text = playerSelected.defense.ToString();
