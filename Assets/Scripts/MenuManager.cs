@@ -9,6 +9,8 @@ public class MenuManager : MonoBehaviour
     [SerializeField] Image imageToFade;
     [SerializeField] GameObject menu;
 
+    [SerializeField] GameObject[] statsButtons;
+
     private PlayerStats[] playerStats;
     [SerializeField] TextMeshProUGUI[] nameText, hpText, manaText, levelText, expText;
     [SerializeField] Slider[] expSlider;
@@ -63,8 +65,22 @@ public class MenuManager : MonoBehaviour
         }
     }
 
+    public void StatsMenu()
+    {
+        for (int i = 0; i < playerStats.Length; i++)
+        {
+            statsButtons[i].SetActive(true);
+        }
+    }
+
     public void FadeImage()
     {
         imageToFade.GetComponent<Animator>().SetTrigger("Fade Start");
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+        print("We've quitted the game.");
     }
 }
