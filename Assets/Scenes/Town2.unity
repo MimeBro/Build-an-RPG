@@ -1014,7 +1014,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 293523935}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2709756843150386700}
+        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
+        m_MethodName: StatsMenuUpdate
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &293523935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1428,7 +1440,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 965142569}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2709756843150386700}
+        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
+        m_MethodName: StatsMenuUpdate
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &965142569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1810,6 +1834,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2709756842695476663, guid: 938af21770a89a149aa04ae98cac4b35, type: 3}
+      propertyPath: statHP
+      value: 
+      objectReference: {fileID: 69575952}
+    - target: {fileID: 2709756842695476663, guid: 938af21770a89a149aa04ae98cac4b35, type: 3}
+      propertyPath: statDef
+      value: 
+      objectReference: {fileID: 1891255701}
+    - target: {fileID: 2709756842695476663, guid: 938af21770a89a149aa04ae98cac4b35, type: 3}
+      propertyPath: statDex
+      value: 
+      objectReference: {fileID: 2068238969}
+    - target: {fileID: 2709756842695476663, guid: 938af21770a89a149aa04ae98cac4b35, type: 3}
+      propertyPath: statMana
+      value: 
+      objectReference: {fileID: 1991748466}
+    - target: {fileID: 2709756842695476663, guid: 938af21770a89a149aa04ae98cac4b35, type: 3}
+      propertyPath: statName
+      value: 
+      objectReference: {fileID: 209063650}
+    - target: {fileID: 2709756842695476663, guid: 938af21770a89a149aa04ae98cac4b35, type: 3}
+      propertyPath: characterStatImage
+      value: 
+      objectReference: {fileID: 1451604373}
     - target: {fileID: 2709756842695476663, guid: 938af21770a89a149aa04ae98cac4b35, type: 3}
       propertyPath: statsButtons.Array.size
       value: 3
@@ -3780,7 +3828,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1834033794}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2709756843150386700}
+        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
+        m_MethodName: StatsMenuUpdate
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1834033794
 MonoBehaviour:
   m_ObjectHideFlags: 0
