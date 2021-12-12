@@ -56,8 +56,8 @@ public class Player : MonoBehaviour
         {
             if (!deactivatedMovement)
             {
-                playerAnimator.SetFloat("movementX", playerRigidBody.velocity.x);
-                playerAnimator.SetFloat("movementY", playerRigidBody.velocity.y);
+                playerAnimator.SetFloat("lastX", playerRigidBody.velocity.x);
+                playerAnimator.SetFloat("lastY", playerRigidBody.velocity.y);
             }
         }
         

@@ -22,6 +22,8 @@ public class Inventory : MonoBehaviour
 
     public void AddItems(ItemsManager item)
     {
+        print(item.itemName + " picked up");
         itemsList.Add(item);
+        print(itemsList.Count);
     }
 }
