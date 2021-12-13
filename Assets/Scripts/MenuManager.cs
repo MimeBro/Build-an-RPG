@@ -20,6 +20,8 @@ public class MenuManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI statHP, statName, statMana, statDef, statDex;
     [SerializeField] Image characterStatImage;
 
+    [SerializeField] Transform itemSlotContainerParent;
+    [SerializeField] GameObject itemSlotContainer;
 
     public static MenuManager instance;
 
@@ -65,6 +67,33 @@ public class MenuManager : MonoBehaviour
             expText[i].text = playerStats[i].currentXP + " / " + playerStats[i].expForNextLevel[playerStats[i].playerLevel];
 
             characterImage[i].sprite = playerStats[i].characterImage;
+        }
+    }
+
+    public  void UpdateItemsInventory()
+    {
+        foreach(Transform itemSlot in itemSlotContainerParent)
+        {
+            Destroy(itemSlot);
+        }
+
+        foreach(ItemsManager item in Inventory.instance.GetItemsList())
+        {
+            RectTransform itemSlot = Instantiate(itemSlotContainer, itemSlotContainerParent).GetComponent<RectTransform>();
+
+            Image itemImage = itemSlot.Find("Item Image").GetComponent<Image>();
+            itemImage.sprite = item.itemsImage;
+
+            TextMeshProUGUI itemText = itemSlot.Find("Amount Text").GetComponent<TextMeshProUGUI>();
+
+            if (item.isStackable)
+            {
+                itemText.text = item.amount.ToString();
+            }
+            else
+            {
+                itemText.text = "";
+            }
         }
     }
 
